@@ -19,4 +19,4 @@ const start = async () => {
   });
 };
 
-start().then(console.log);
+start().then(() => console.log('NODE_ENV', process.env.NODE_ENV));
