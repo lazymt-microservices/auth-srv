@@ -1,10 +1,9 @@
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import jwt from 'jsonwebtoken';
+import { validateRequest, BadRequestError } from '@lazymtlib/common';
 
-import { validateRequest } from '../middlewares/validate-request';
 import { User } from '../models/user';
-import { BadRequestError } from '../errors/bad-request-error';
 
 const router = express.Router();
 
@@ -43,7 +42,7 @@ router.post(
 
     // Store it on session object
     req.session = {
-      jwt: userJwt
+      jwt: userJwt,
     };
 
     res.status(201).send(user);
