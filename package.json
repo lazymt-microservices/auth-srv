@@ -1,7 +1,7 @@
 {
   "name": "auth",
   "version": "1.0.0",
-  "description": "",
+  "description": "auth service",
   "main": "index.js",
   "scripts": {
     "start": "ts-node-dev src/index.ts",
@@ -15,10 +15,10 @@
     ]
   },
   "keywords": [],
-  "author": "",
+  "author": "MT",
   "license": "ISC",
   "dependencies": {
-    "@lazymtlib/common": "^1.0.7",
+    "@lazymtlib/common": "^1.0.8",
     "@types/cookie-session": "^2.0.42",
     "@types/express": "^4.17.12",
     "@types/jsonwebtoken": "^8.5.1",
